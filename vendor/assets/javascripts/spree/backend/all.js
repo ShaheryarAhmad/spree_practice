@@ -9,3 +9,12 @@
 //= require spree/backend
 
 //= require_tree .
+
+$(document).ready(function(){
+	
+ $(".ellow").click(function(event){
+            $('body').addClass('ellow');     
+  });
+}
+
+ );

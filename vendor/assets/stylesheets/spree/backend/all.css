@@ -8,3 +8,7 @@
  *= require_self
  *= require_tree .
 */
+
+.ellow{
+        background-color: yellow;
+}
