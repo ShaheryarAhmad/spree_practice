@@ -3,8 +3,8 @@ development:
   encoding: unicode
   database: spree_db_development
   pool: 5
-  username: shaheryar
-  password: 
+  username: protonlabs3
+  password: password
   host: localhost
 
 test:
@@ -12,8 +12,8 @@ test:
   encoding: unicode
   database: spree_db_test
   pool: 5
-  username: shaheryar
-  password: 
+  username: protonlabs3
+  password: password
   host: localhost
 
 production:
@@ -21,6 +21,6 @@ production:
   encoding: unicode
   database: spree_db_production
   pool: 5
-  username: shaheryar
-  password: 
+  username: protonlabs3
+  password: password
   host: localhost
