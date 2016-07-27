@@ -10,10 +10,12 @@ Rails.application.routes.draw do
   Spree::Core::Engine.routes.draw do
      get '/contact' => "products#contact"
      get '/about' => "products#about"
-   
+     resources :custom_templates
+     post '/abc' => 'custom_templates#update_logo'
+     post '/xyz' => 'custom_templates#update_color'
    end
 
-          # The priority is based upon order of creation: first created -> highest priority.
+  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

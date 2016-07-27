@@ -8,3 +8,16 @@
  *= require_self
  *= require_tree .
 */
+
+.yellow{
+        background-color: yellow;
+}
+.red{
+        background-color: red;
+}
+.green{
+        background-color: green;
+}
+.white{
+        background-color: white;
+}
