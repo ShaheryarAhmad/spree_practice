@@ -1,0 +1,6 @@
+<ul data-hook="admin_configurations_sidebar_menu" class="collapse nav nav-pills nav-stacked" id="sidebar-logo">
+<%= form_for Spree::CustomTemplate.new , url: abc_path do |f| %>
+   	<%= f.file_field :logo %>
+   	<%= f.submit 'Upload' %>
+<% end %>
+</ul>

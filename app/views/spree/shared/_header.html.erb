@@ -21,11 +21,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- </head> -->
 <!-- <body> -->
 <!--header-->
+
 <div class="header">
 <div class="container">
 		<div class="head">
-			<div class=" logo">
-				<%=link_to (image_tag "spree/frontend/logo.png"), spree.root_path %>	
+			<div class="logo">
+				<% @logo  = @template.present? ? @template.logo.url : 'logo.png' %>
+				<% @color = @template.present? ? @template.color : 'white' %>
+				<%=link_to image_tag(@logo, size: '170x102'), spree.root_path %>	
+        
 			</div>
 		</div>
 	</div>
@@ -75,6 +79,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </button>
      
    </div> 
+   
    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
         <ul class="nav navbar-nav nav_1">
@@ -126,6 +131,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</li>
 			         <li ><%=link_to 'About', '/about'%></li>
             <li ><%=link_to 'Contact', '/contact'%></li>
+            
         </ul>
      </div><!-- /.navbar-collapse -->
 
@@ -160,7 +166,15 @@ License: Creative Commons Attribution 3.0 Unported -->
 
           </div>
           <div class="clearfix"> </div>
-					
+
+          	<style>
+                body{
+                 	background-color: <%= @color %>
+                }
+          	</style>
+         
+
+
 						<!----->
 
 						<!---pop-up-box--					  
