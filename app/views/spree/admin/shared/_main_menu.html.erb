@@ -43,14 +43,12 @@
 
 <% if can? :admin, current_store %>
   <ul class="nav nav-sidebar">
-    <%= main_menu_tree 'colors', icon: "wrench", sub_menu: "colors", url:"#sidebar-color" %>
+    <%= main_menu_tree 'colors', icon: "pencil", sub_menu: "colors", url:"#sidebar-color" %>
   </ul>
 <% end %>
 
-
-
 <% if can? :admin, current_store %>
   <ul class="nav nav-sidebar">
-    <%= main_menu_tree 'Logo', icon: "wrench", sub_menu: "logo", url:"#sidebar-logo" %>
+    <%= main_menu_tree 'Logo', icon: "heart", sub_menu: "logo", url:"#sidebar-logo" %>
   </ul>
 <% end %>
