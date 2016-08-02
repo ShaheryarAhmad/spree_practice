@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   Spree::Core::Engine.routes.draw do
      get '/contact' => "products#contact"
      get '/about' => "products#about"
-   
+     resources :custom_templates
+     post '/abc' => 'custom_templates#update_logo'
+     post '/xyz' => 'custom_templates#update_color'
+     post '/lmn' => 'custom_templates#update_theme'
    end
 
   # The priority is based upon order of creation: first created -> highest priority.

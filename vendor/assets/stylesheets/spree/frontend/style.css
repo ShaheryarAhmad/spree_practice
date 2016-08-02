@@ -2331,13 +2331,11 @@ span.label {
 td.add-check a {
     width: 86px;
 }
+}
 @media(max-width:320px){
 .banner {
     height: 232px;
     background-position-x: -225px;
     background-size: 542px;
 }
-.name{
-
-	color:#f67777;
 }

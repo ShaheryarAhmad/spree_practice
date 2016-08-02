@@ -3,7 +3,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
-/*@font-face {
+@font-face {
     font-family: 'Oxygen-Bold';
     src:url(../fonts/Oxygen-Bold.ttf) format('truetype');
 }
@@ -24,7 +24,7 @@ html,body{
 	font-size: 100%;
 	font-family:'Oxygen-Regular';
 	 
-}*/
+}
 body a{
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 	width: 17px;
     height: 17px;
     display: block;
-    background: url('/assets/spree/frontend/img-sprite.png')no-repeat -14px -14px ;
+    background: url(../images/img-sprite.png)no-repeat -14px -14px ;
 	margin:0 0.3em;
 }
 .header-social ul li a i.ic1{
@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6,label,p{
    background-position:-199px -13px ;
 }
 .header-social ul li a i:hover{
-    background:url('/assets/spree/frontend/img-sprite.png')no-repeat -14px -52px ;
+    background:url(../images/img-sprite.png)no-repeat -14px -52px ;
 }
 .header-social ul li a i.ic1:hover{
     background-position:  -55px -50px ;
@@ -152,7 +152,7 @@ div#bs-megadropdown-tabs {
 	font-size: 1.5em;
     color: #000;
     margin-bottom: 0.5em;
-    
+    font-family: 'Ubuntu-Regular';
 }
 /*--cart--*/
 .itemContainer{
@@ -235,7 +235,7 @@ a.item_add {
 	width: 100%;
     height: 700px;
     display: block;
-    background: url('/assets/spree/frontend/ba11.jpg')no-repeat right top;
+    background: url(../images/ba11.jpg)no-repeat right top;
 	overflow-x:hidden;
 }
 .no-cssanimations .rw-wrapper .rw-sentence span:first-child{
@@ -257,12 +257,12 @@ a.item_add {
     line-height: 1.8em;
     text-transform: uppercase;
     letter-spacing: 5px;
-    
+    font-family: 'Ubuntu-Bold';
 }
 .col-2 h2{
 	font-size: 2.5em;
     line-height: 1.8em;
-    
+    font-family: 'Oxygen-Bold';
 }
 .col-2 h2 a{
 	text-decoration:none;
@@ -315,7 +315,7 @@ a.buy-now:hover{
 	color:#F67777;
 	font-size:2em;
 	text-transform:uppercase;
-
+	font-family: 'Ubuntu-Bold';
 }
 .col-pic label{
 	width:100px;
@@ -330,7 +330,7 @@ a.buy-now:hover{
 	font-size: 2.5em;
     color: #000000;
     line-height: 1.8em;
-   
+    font-family: 'Ubuntu-Regular';
 	text-align:center;
 }
 
@@ -506,7 +506,7 @@ a.buy-now:hover{
 /*----*/
 .mid-1 h6 {
     font-size: 1.2em;
- 
+    font-family: 'Ubuntu-Regular';
 }
 .mid-1 h6 a {
     color: #000000;
@@ -524,7 +524,7 @@ a.buy-now:hover{
 	font-style:normal;
 }
 .mid-2 p label{
-	
+	text-decoration: line-through;
 	font-weight:400;
 	margin-right:6px;
 }
@@ -592,7 +592,7 @@ a.buy-now:hover{
 	width: 100%;
     height: 250px;
     display: block;
-    background: url('/assets/spree/frontend/back.jpg')no-repeat ;
+    background: url(../images/back.jpg)no-repeat ;
 	padding:5em 0;
 }
 .banner-top h1{
@@ -734,7 +734,7 @@ ul.kid-menu{
 	color: #000;
 	font-size: 0.9em;
 	text-decoration:none;
-	
+	    font-family: 'Oxygen-Bold';
 }
 .menu-drop > li > a:hover{
 	color:#f67777;
@@ -1086,7 +1086,7 @@ nav.nav-sidebar {
 }
 .checkbox1 input + i:after {
 	content: '';
-	background: url("/assets/spree/frontend/tick1.png") no-repeat 1px 2px;
+	background: url("../images/tick1.png") no-repeat 1px 2px;
 	top: -1px;
 	left: -1px;
 	width: 15px;
@@ -1135,7 +1135,7 @@ nav.nav-sidebar {
 	font-size: 1.5em;
 	color:#000;
 	line-height:1.4em;
-
+    font-family: 'Ubuntu-Regular';
 }
 .contact-top div{
 	padding:0.5em 0;
@@ -1207,7 +1207,7 @@ nav.nav-sidebar {
 	font-size: 1.2em;
 	color:#000;
 	line-height:1.4em;
-  
+    font-family: 'Ubuntu-Regular';
 }
 .address1 p{
 	margin: 0;
@@ -1300,7 +1300,7 @@ a.at-in {
   position: relative;
 }
 .close1, .close2, .close3 {
-  background: url('assets/spree/frontend/close.png') no-repeat 0px 0px ;
+  background: url('../images/close.png') no-repeat 0px 0px ;
   cursor: pointer;
   width: 28px;
   height: 28px;
@@ -1325,7 +1325,7 @@ a.at-in {
     background: #F5F5F5;
     border-bottom: 1px solid #A6A5A5;
     padding: 0.8em;
-   
+    font-family: 'Ubuntu-Regular';
 }
 .wishlist h6 a{
 	text-decoration:none;
@@ -1345,7 +1345,7 @@ a.at-in {
 .footer-middle-in h6{
 	font-size: 1.4em;
     color: #fff;
-   
+    font-family: 'Ubuntu-Bold';
 	margin-bottom: 1em;
     text-transform: uppercase;
 }
@@ -1454,7 +1454,7 @@ ul.tag-in li a:hover{
 .page-header h3{
 	font-size: 3em;
 	color:#000;
-	
+	font-family: 'Ubuntu-Regular';
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
   padding: 8px;
@@ -2331,32 +2331,11 @@ span.label {
 td.add-check a {
     width: 86px;
 }
-
+}
 @media(max-width:320px){
 .banner {
     height: 232px;
     background-position-x: -225px;
     background-size: 542px;
 }
-
-
 }
-.name{
-
-	color: #f67777 !important;
-}
-
-
-.list-group-item {
-	    border: 1px solid #fff;
-	}
-
-	.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus{
-		color: #333;
-		background-color: #f67777;
-		border-color:#f67777 ;
-	}
-	.table > thead > tr > td.warning, .table > tbody > tr > td.warning, .table > tfoot > tr > td.warning, .table > thead > tr > th.warning, .table > tbody > tr > th.warning, .table > tfoot > tr > th.warning, .table > thead > tr.warning > td, .table > tbody > tr.warning > td, .table > tfoot > tr.warning > td, .table > thead > tr.warning > th, .table > tbody > tr.warning > th, .table > tfoot > tr.warning > th{
-		background-color: #f67777;
-		color: #333; 
-	}

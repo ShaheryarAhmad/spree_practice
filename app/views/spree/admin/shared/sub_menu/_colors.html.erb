@@ -1,3 +1,5 @@
-<ul data-hook="admin_configurations_sidebar_menu" class="collapse nav nav-pills nav-stacked" id="sidebar-colors">
-  <button class='ellow'>Yellow</button>
+<ul data-hook="admin_configurations_sidebar_menu" class="collapse nav nav-pills nav-stacked" id="sidebar-color">
+	<%= button_to "Yellow", xyz_path(color: 'yellow') , class: "yellow" %>
+	<%= button_to "Red", xyz_path(color: 'red') , class: "red" %>
+	<%= button_to "Green", xyz_path(color: 'green') , class: "green" %>
 </ul>
