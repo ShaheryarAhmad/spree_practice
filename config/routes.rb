@@ -13,6 +13,7 @@ Rails.application.routes.draw do
      resources :custom_templates
      post '/abc' => 'custom_templates#update_logo'
      post '/xyz' => 'custom_templates#update_color'
+     post '/lmn' => 'custom_templates#update_theme'
    end
 
   # The priority is based upon order of creation: first created -> highest priority.

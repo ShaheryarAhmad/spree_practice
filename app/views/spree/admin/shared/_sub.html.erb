@@ -9,3 +9,9 @@
     <%= main_menu_tree 'Logo', icon: "heart", sub_menu: "logo", url:"#sidebar-logo" %>
   </ul>
 <% end %>
+
+<% if can? :admin, current_store %>
+  <ul class="nav nav-sidebar">
+    <%= main_menu_tree 'Themes', icon: "heart", sub_menu: "theme", url:"#sidebar-theme" %>
+  </ul>
+<% end %>

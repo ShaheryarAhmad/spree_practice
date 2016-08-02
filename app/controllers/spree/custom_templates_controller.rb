@@ -23,6 +23,17 @@ class CustomTemplatesController < ApplicationController
     redirect_to spree.root_path
   end
 
+  def update_theme 
+    admin = Spree::Role.find_by_name(:admin).users.first
+    if admin.custom_template.present?
+      admin.custom_template.update(theme: params[:theme])
+    else
+      template = Spree::CustomTemplate.new(theme: params[:theme])
+      admin.custom_template = template
+    end  
+    redirect_to spree.root_path
+  end
+
 
   private
 
