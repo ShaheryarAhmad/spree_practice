@@ -6,6 +6,9 @@
 <!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
   <head data-hook="inside_head">
     <%#= stylesheet_link_tag "../../themes/theme2/css/style" %>
+
+     <%#= stylesheet_link_tag    '/spree/frontend/theme1', media: 'all', 'data-turbolinks-track' => true %>
+     <%= stylesheet_link_tag    "#{@template.theme}.scss.erb", media: 'all', 'data-turbolinks-track' => true %>
     <%= render partial: 'spree/shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
@@ -25,8 +28,14 @@
           <%= yield %>
         </div>
 
-        <%= yield :templates %>
+        <%#= yield :templates %>
       </div>
     </div>
   </body>
+  <style>
+      body{
+
+        background-color: <%= @template.color %>
+      }
+  </style>
 </html>
