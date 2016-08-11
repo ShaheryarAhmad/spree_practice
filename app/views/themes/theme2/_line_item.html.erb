@@ -1,0 +1,30 @@
+<div class="col-md-9 cart-items">
+<% variant = line_item.variant %>
+<%= order_form.fields_for :line_items, line_item do |item_form| %>
+       <div class="cart-header2">
+         <div class="close2"> </div>
+          <div class="cart-sec">
+            <div class="cart-item">
+              <% if variant.images.length == 0 %>
+        <%= link_to small_image(variant.product), variant.product %>
+      <% else %>
+        <%= link_to image_tag(variant.images.first.attachment.url(:small)), variant.product %>
+      <% end %>
+            </div>
+             <div class="cart-item-info">
+               <h3><%= link_to line_item.name, product_path(variant.product ) %><span>Model No: 8768</span></h3>
+               <h4><span></span><%= line_item.single_money.to_html %></h4>
+               <p class="qty">Qty ::</p>
+               <%= item_form.number_field :quantity, min: 0, class: "form-control line_item_quantity", size: 5 %>
+             </div>
+             <div class="clearfix"></div>
+            <!-- <div class="delivery">
+               <p>Service Charges:: Rs.50.00</p>
+               <span>Delivered in 2-3 bussiness days</span>
+               <div class="clearfix"></div>
+                </div>   -->          
+          </div>
+        </div> 
+<% end %>   
+    </div>
+    

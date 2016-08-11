@@ -1,0 +1,101 @@
+
+<div class="product-main">
+	 <div class="container">
+		 <ol class="breadcrumb">
+		  <li><a href="index.html">Home</a></li>
+		  <li class="active">Single</li>
+		 </ol>
+		 <div class="ctnt-bar cntnt">
+			 <div class="content-bar">
+				 <div class="single-page">					 
+					 <!--Include the Etalage files-->
+						
+					 <!-- Include the Etalage files -->
+					 
+						<!--//details-product-slider-->
+					 <div class="details-left-slider">
+						  <ul id="etalage">
+							 <li>
+
+								<a href="optionallink.html">
+							  <!-- <img class="etalage_thumb_image" src="/assets/spree/frontend/theme2/s1.jpg" /> -->
+								 <%= product_image(@product, itemprop: "image", class: 'etalage_thumb_image') %>
+								 <%= product_image(@product, itemprop: "image", class: 'etalage_source_image') %>
+								<!-- <img class="etalage_source_image" src="/assets/spree/frontend/theme2/s1.jpg" /> -->
+								</a>
+							 </li>
+							 <li>
+								<img class="etalage_thumb_image" src="/assets/spree/frontend/theme2/s2.jpg" />
+								<img class="etalage_source_image" src="/assets/spree/frontend/theme2/s2.jpg"/>
+							 </li>
+							 <li>
+								<img class="etalage_thumb_image" src="/assets/spree/frontend/theme2/s3.jpg" />
+								<img class="etalage_source_image" src="/assets/spree/frontend/theme2/s3.jpg" />
+							 </li>
+							 <li>
+								<img class="etalage_thumb_image" src="/assets/spree/frontend/theme2/s4.jpg" />
+								<img class="etalage_source_image" src="/assets/spree/frontend/theme2/s4.jpg" />
+							 </li>
+							 <div class="clearfix"></div>
+						 </ul>
+					 </div>
+					 <div class="details-left-info">
+							<h3><%= @product.name %></h3>
+								<h4><%#= @product.name %></h4>							
+							<p><%= display_price(@product) %><a href="#">Click for offer</a></p>
+							<p class="qty">Qty ::</p>
+							<div class="btn_form">
+								 <%= render partial: 'cart_form' %>
+							</div>
+							<div class="flower-type">
+							<p>Mobel  ::<a href="#">Dress</a></p>
+							<p>Brand  ::<a href="#">Pellentesque</a></p>
+							</div>
+							<h5>Description  ::</h5>
+							<p class="desc"> <%= product_description(@product) %></p>
+							<!-- <h5>Properties  ::</h5>
+							<p class="desc">  <%#= render :partial => 'properties' %></p> -->
+					 </div>
+					 <div class="clearfix"></div>				 	
+				 </div>
+			 </div>
+		 </div>		 
+		 <div class="clearfix"></div>
+		 <div class="single-bottom2">
+			 <h6><%= Spree.t(:look_for_similar_items) %></h6>
+				<div class="rltd-posts">
+				 <% if !@product.taxons.blank? %>
+					 <div class="col-md-3 pst1">
+						 <% @product.taxons.each do |taxon| %>
+						 <ul>
+						 <li><h4><%= link_to taxon.name, seo_url(taxon) %><h4></li>
+						 <% end %>
+						 </ul>
+						 <% end %>
+						 <%#= render partial: 'cart_form' %>
+					 </div>
+					 <!-- <div class="col-md-3 pst1">
+						 <img src="/assets/spree/frontend/theme2/c1.jpg" alt=""/>
+						 <h4><a href="products.html">NEWLOOK</a></h4>
+						 <a class="pst-crt" href="cart.html">ADD TO CART</a>
+					 </div>
+					 <div class="col-md-3 pst1">
+						 <img src="/assets/spree/frontend/theme2/ab4.jpg" alt=""/>
+						 <h4><a href="products.html">SAREES</a></h4>
+						 <a class="pst-crt" href="cart.html">ADD TO CART</a>
+					 </div>
+					 <div class="col-md-3 pst1">
+						 <img src="/assets/spree/frontend/theme2/c5.jpg" alt=""/>
+						 <h4><a href="products.html">MANGO</a></h4>
+						 <a class="pst-crt" href="cart.html">ADD TO CART</a>
+					 </div> -->
+					 <div class="clearfix"></div>
+				</div>
+		 </div>	
+	 </div>
+</div>
+<!-- <div class="abc1">
+	<button>Show</button>
+</div> -->
+<!--fotter-->
+

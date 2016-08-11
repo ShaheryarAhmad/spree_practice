@@ -8,9 +8,9 @@
     <%= render partial: 'spree/shared/filters' if @taxon.leaf? %>
   </div>
 <% end %>
-
+<% @theme  = @template.present? ? @template.theme : 'theme1' %>
 <div data-hook="taxon_products">
-  <%= render partial: 'spree/shared/products', locals: { products: @products, taxon: @taxon } %>
+  <%= render partial: "themes/#{@theme}/products", locals: { products: @products, taxon: @taxon } %>
 </div>
 
 <% unless params[:keywords].present? %>

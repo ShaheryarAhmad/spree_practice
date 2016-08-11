@@ -8,7 +8,9 @@
     <%#= stylesheet_link_tag "../../themes/theme2/css/style" %>
 
      <%#= stylesheet_link_tag    '/spree/frontend/theme1', media: 'all', 'data-turbolinks-track' => true %>
+
      <%= stylesheet_link_tag    "#{@template.theme}.scss.erb", media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'spree/frontend/theme2/theme2', 'data-turbolinks-track' => true %>
     <%= render partial: 'spree/shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
@@ -16,7 +18,7 @@
     <% unless ((params[:controller] == "spree/user_sessions" || params[:controller] == "spree/user_registrations") && (params[:action] == "new")) ||((params[:controller] == "spree/checkout")&& (params[:action] == "registration"))%>
     <%= render partial: 'spree/shared/header' %>
     <%end%>
-    <div class="container">
+    <div>
       <div class="row" data-hook>
         <%#= breadcrumbs(@taxon) %>
         

@@ -1,4 +1,21 @@
 <!---->
+
+<div class="categoires">
+	 <div class="container">
+		 <a href="#"><div class="col-md-4 sections fashion-grid-a">
+			 <h4>Fashion</h4>
+			 <p>dignissim</p>			 					
+		 </div></a>
+		 <a href="#"><div class="col-md-4 sections fashion-grid-b">
+			 <h4>Beauty</h4>
+			 <p>fermentum</p>			 					
+		 </div></a>
+		 <a href="#"><div class="col-md-4 sections fashion-grid-c">
+			 <h4>Creativity</h4>
+			 <p>vulputate</p>				
+		 </div></a>
+	 </div>
+</div>
 <div class="features" id="features">
 	 <div class="container">
 		 <div class="tabs-box">
@@ -13,13 +30,13 @@
 					
 					 <% Spree::Product.all.each do |pd|%>
 
-					 <a href="single.html"><div class="product-grid">
+					 <div class="product-grid">
 						<div class="more-product-info"></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<%=link_to (small_image pd), spree.product_path(pd, taxon_id: @taxon.try(:id)) %>
+							<%=link_to (small_image pd, class: "img-responsive", alt: "", :width => 100, :height => 100), spree.product_path(pd, taxon_id: @taxon.try(:id)) %>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
+							<button class="btns"><%= link_to 'ORDER NOW',spree.product_path(pd, taxon_id: @taxon.try(:id)) %></button>
 							</h4>
 							</div>
 						</div>	</a>					
@@ -29,6 +46,7 @@
 								<span class="item_price"><%= display_price(pd) %></span>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add" value="ADD">	
+								 
 							</div>												
 							<div class="clearfix"> </div>
 						</div>
@@ -41,6 +59,30 @@
 			 </div>
 		 </div>				
 		 </div>
+
+		  <div id="tab2" class="tab-grid2">
+				 <a href="single.html"><div class="product-grid">
+						<div class="more-product-info"></div>						
+						<div class="product-img b-link-stripe b-animate-go  thickbox">
+							<img src="images/c1.jpg" class="img-responsive" alt=""/>
+							<div class="b-wrapper">
+							<h4 class="b-animate b-from-left  b-delay03">							
+							<button class="btns">ORDER NOW</button>
+							</h4>
+							</div>
+						</div></a>						
+						<div class="product-info simpleCart_shelfItem">
+							<div class="product-info-cust">
+								<h4>NEWLOOK</h4>
+								<span class="item_price">$187.95</span>
+								<input type="text" class="item_quantity" value="1" />
+								<input type="button" class="item_add" value="ADD">	
+							</div>													
+							<div class="clearfix"> </div>
+						</div>
+		  </div>
+					
+
 			<!-- tabs-box -->
 			<!-- Comman-js-files -->
 			<script>

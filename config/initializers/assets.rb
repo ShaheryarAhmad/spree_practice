@@ -11,3 +11,4 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( theme1.scss.erb.css )
 Rails.application.config.assets.precompile += %w( theme2.scss.erb.css )
+Rails.application.config.assets.precompile += %w( spree/frontend/theme2/theme2.js )

@@ -35,7 +35,7 @@ ol.breadcrumb li.active{
 }
 /*-----start-header----*/
 .header{
-   background:url(../images/banner33.jpg) no-repeat 0px 0px;
+   background:url('/assets/spree/frontend/theme2/banner33.jpg') no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -96,7 +96,7 @@ ol.breadcrumb li.active{
 i.arrow{
 	width:22px;
 	height:22px;
-	background: url('../images/img-sprite.png') no-repeat 0px -30px;
+	background: url('/assets/spree/frontend/theme2/img-sprite.png') no-repeat 0px -30px;
 	display:inline-block;
 	cursor:pointer;
 	vertical-align: middle;
@@ -185,19 +185,19 @@ i.arrow{
 	margin:4em 0 0em 0;
 }
 .fashion-grid-a {
-	background:url(../images/bg1.jpg) no-repeat;
+	background:url('/assets/spree/frontend/theme2/bg1.jpg') no-repeat;
 	width:32%;
 	margin-right:2%;
 	min-height: 210px;
 }
 .fashion-grid-b {
-	background: url(../images/bg2.jpg) no-repeat;
+	background: url('/assets/spree/frontend/theme2/bg2.jpg') no-repeat;
 	width:32%;
 	margin-right:2%;
 	min-height: 210px;
 }
 .fashion-grid-c {
-	background: url(../images/bg3.jpg) no-repeat;
+	background: url('/assets/spree/frontend/theme2/bg3.jpg') no-repeat;
 	width:32%;
 	min-height: 210px;
 }
@@ -415,7 +415,7 @@ span.item_price{
 }
 /*----*/
 .products{
-	background:url(../images/banner2.jpg) no-repeat 0px 0px;
+	background:url('/assets/spree/frontend/theme2/banner2.jpg') no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size: cover;
 -moz-background-size: cover;
@@ -466,7 +466,7 @@ i.boque{
 }
 /*----*/
 .fotter{
-	background:url(../images/banner2.jpg) no-repeat 0px 0px;
+	background:url('/assets/spree/frontend/theme2/banner2.jpg') no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size: cover;
 -moz-background-size: cover;
@@ -506,7 +506,7 @@ i.boque{
 .social-icons a span{
 	width:39px;
 	height:39px;
-	background:url('../images/social.png') no-repeat 0px 0px;
+	background:url('/assets/spree/frontend/theme2/social.png') no-repeat 0px 0px;
 	display:inline-block;
 }
 .social-icons a span.in{
@@ -622,7 +622,7 @@ padding-top:1em;
 }
 /*--about--*/
 .header2{
-   background:url(../images/banner33.jpg) no-repeat 0px 0px;
+   background:url('../assets/spree/frontend/theme2/banner33.jpg') no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size: cover;
 -moz-background-size: cover;
@@ -917,7 +917,7 @@ color:#E92D50;
 .sidebar span {
 width: 18px;
 height: 18px;
-background: url(../images/arw.png) no-repeat 0px 6px;
+background: url('/assets/spree/frontend/theme2/arw.png') no-repeat 0px 6px;
 display: block;
 float: left;
 }
@@ -1079,7 +1079,7 @@ margin-bottom: 2em;
 }
 /* .focus class is also added on hover */
 .metro:hover .selected::after, .metro.focus .selected::after {
-  background: url(../images/p_minus.png) no-repeat 0px 10px;
+  background: url('/assets/spree/frontend/theme2/p_minus.png') no-repeat 0px 10px;
 }
 .metro li:hover{
 	background-color:#fa558f;
@@ -1104,11 +1104,11 @@ margin-bottom: 2em;
 	top: 0;
 	bottom: 0;
 	padding:6px;
-	background:url(../images/p_plus.png) no-repeat 0px 10px;
+	background:url('/assets/spree/frontend/theme2/p_plus.png') no-repeat 0px 10px;
 }
 .metro:hover .selected::after,
 .metro.focus .selected::after{
-	background:url(../images/p_minus.png) no-repeat 0px 10px;
+	background:url('/assets/spree/frontend/theme2/p_minus.png') no-repeat 0px 10px;
 }
 /* DROP DOWN WRAPPER */
 .metro div{
@@ -1647,7 +1647,7 @@ p.qty {
 	line-height:1.3em;
 }
 .close1,.close2{
-  background: url('../images/close.png') no-repeat 0px 0px;
+  background: url('/assets/spree/frontend/theme2/close.png') no-repeat 0px 0px;
   cursor: pointer;
   width: 28px;
   height: 28px;
@@ -2072,7 +2072,7 @@ h3.lorem{
 	padding:4em 0;
 }
 .cart-list li {
-	list-style-image: url(../images/icon2.png);
+	list-style-image: url('/assets/spree/frontend/theme2/icon2.png');
 	margin-left: 20px;
 	margin-bottom: 10px;
 }
