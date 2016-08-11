@@ -9,9 +9,9 @@
 
      <%#= stylesheet_link_tag    '/spree/frontend/theme1', media: 'all', 'data-turbolinks-track' => true %>
      <% if @template.present? %>
-     <%= stylesheet_link_tag    "theme2.scss.erb", media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    "#{@template.theme}.scss.erb", media: 'all', 'data-turbolinks-track' => true %>
      <%else%>
-     <%= stylesheet_link_tag    "#{@template.theme}.scss.erb", media: 'all', 'data-turbolinks-track' => true %>
+      <%= stylesheet_link_tag    "theme2.scss.erb", media: 'all', 'data-turbolinks-track' => true %>
      <%end%>
       <%= javascript_include_tag 'spree/frontend/theme2/theme2', 'data-turbolinks-track' => true %>
     <%= render partial: 'spree/shared/head' %>
